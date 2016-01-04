@@ -2,7 +2,6 @@
  * Print diff between two strings similar to the way the diff utility does between files
  *
  * diff operation is based on solving longest common subsequence of the two strings.
- *
  * It boils down to two steps.
  * Step 1: Build the Dynamic Programming LCS matrix
  * Step 2: Use the matrix to figure out the letters to be deleted and added.
