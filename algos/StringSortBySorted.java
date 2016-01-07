@@ -3,8 +3,17 @@
  * are ["bgi","cde","adf"] and hence the output should be ["daf","gbi","cde"].
  * For simplicity, it is assumed that the chars are from 'a' to 'z'.
  *
- * I like to use Arrays.sort, with a Comparator that looks at the sorted 
- * strings to compare.
+ * We can use Arrays.sort, with a Comparator that looks at the sorted 
+ * strings to compare. But, notice that we are sorting the strings everytime
+ * they are compared to each other.
+ *
+ * So, if we have n strings, each of size m, the time complexity is O(n log n * m log m) = 
+ * O(nm log m log n) and the space complexity is O(m), not counting the output array.
+ *
+ * We can do better in time than this by sorting the strings only once. The time complexity would
+ * be O(nm log m + n log n) and the space complexity would be O(n), since we not have an intermediate
+ * array of sorted strings.
+ * 
  */
 
 import java.util.Arrays;
