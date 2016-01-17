@@ -2,6 +2,7 @@
 
 This is my attemp at checking in the code I write in my free time for fun.
 
+-> StringAnagrams: Check if two strings are anagrams or not.
 -> ElevatorNumWays: Find number of ways a person can take an elevator, to go to a particular floor.
 -> FairestSharingSequence: Best way to share resources between two parties.
 -> NumberOfSquares: Count number of squares of different sizes in a grid.
