@@ -1,29 +1,59 @@
+/*
+ * Given two strings, determine if they are anagrams of each other or not.
+ * You can assume that strings only contain ascii chars (0 to 255).
+ * 
+ * 1. Sort and compare: You can sort them and compare. O(n log n) in time, O(n) in space
+ * 2. Count chars together: Count number of occurrences of chars in both strings and compare.
+ *    O(n) in time and O(1) in space 
+ * 3. Count and check: Count number of occurrences of chars in one string first. While going 
+ *    through second string, we can exit as soon as we find a mismatch.
+ *    O(n) in time and O(1) in space
+ *
+ * I like approch #2. It is much simpler than #3 and has same time and space complexity.
+ *
+ */
+
 import java.util.Arrays;
 
 public class StringAnagrams {
 	public static void main(String[] args) {
-		System.out.println(anagram2("",""));
-		System.out.println(anagram2("ab","abc"));
-		System.out.println(anagram2("abc","def"));
-		System.out.println(anagram2("abc","bac"));
-		System.out.println(anagram2("abcdefghi","gadbfiche"));
+		String[] inputs1 = new String[] {"","ab","abc","abc","abcdefghi"};
+		String[] inputs2 = new String[] {"","abc","def","bac","gadbfiche"};
+
+		System.out.println("Sort and compare:");
+
+		for (int i=0;i<inputs1.length;i++) {
+			System.out.println("\""+inputs1[i]+"\" & \""+inputs2[i]+"\": "+sortAndCompare(inputs1[i],inputs2[i]));
+		}
 		
-		System.out.println();
+		System.out.println("Count chars together:");
 		
-		System.out.println(anagram3("",""));
-		System.out.println(anagram3("ab","abc"));
-		System.out.println(anagram3("abc","def"));
-		System.out.println(anagram3("abc","bac"));
-		System.out.println(anagram3("abcdefghi","gadbfiche"));
+		for (int i=0;i<inputs1.length;i++) {
+                        System.out.println("\""+inputs1[i]+"\" & \""+inputs2[i]+"\": "+countChars(inputs1[i],inputs2[i]));
+                }
+		
+		System.out.println("Count and check:");
+
+		for (int i=0;i<inputs1.length;i++) {
+                        System.out.println("\""+inputs1[i]+"\" & \""+inputs2[i]+"\": "+countAndCheck(inputs1[i],inputs2[i]));
+                }
+		
 	}
 	
-	// linear in time, linear in space
-	// Need to finish iterating through both strings in all cases
-	// Two empty strings are anagrams
-	public static boolean anagram2(String str1, String str2) {
-		if (str1 == null || str2 == null) {
+	public static boolean sortAndCompare(String str1, String str2) {
+		if (str1.length() != str2.length()) {
 			return false;
 		}
+		
+		char[] array1 = str1.toCharArray();
+		char[] array2 = str2.toCharArray();
+		Arrays.sort(array1);
+		Arrays.sort(array2);
+
+		return Arrays.equals(array1,array2);
+	}
+
+	public static boolean countChars(String str1, String str2) {
 		if (str1.length() != str2.length()) {
 			return false;
 		}
@@ -35,18 +65,15 @@ public class StringAnagrams {
 			counter1[str1.charAt(i)]++;
 			counter2[str2.charAt(i)]++;
 		}
+
 		return Arrays.equals(counter1,counter2);
 	}
 	
-	// linear in time, linear in space
-	// We can iterate through one string and exit as soon as we find a mismatch
-	// Two empty strings are NOT anagrams
-	public static boolean anagram3(String str1, String str2) {
-		if (str1 == null || str2 == null) {
-			return false;
-		}
+	public static boolean countAndCheck(String str1, String str2) {
 		if (str1.length() != str2.length()) {
 			return false;
+		} else if (str1.length() == 0) {
+			return true;
 		}
 		
 		int[] counter = new int[256];
