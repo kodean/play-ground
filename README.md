@@ -2,6 +2,7 @@
 
 This is my attempt at checking in the code I write for fun.
 
+-> StringRotation: Given two strings, check if one of them is a rotaion of another. 
 -> GraphRoute: Given two nodes of a graph, check if there is a path between the two.
 -> TreeBSTArrays: Given a Binary Search Tree, print all the possible arrays it could have been constructed from. 
 -> TimedHashMap: Create a data structure to store values based on keys and timestamps. 
