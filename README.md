@@ -13,4 +13,4 @@
 * NumberOfSquares: Count number of squares of different sizes in a grid.
 * StringDiff: Print the simplest way to transform one string into another.
 * StringSortBySorted: Sort an array of strings by comparing the sorted counterparts of each string.
-* ArrayMultiplied 
+* ArrayMultiplied: Return an array, for each index provide multiples of all indices except current index. 
