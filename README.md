@@ -2,6 +2,7 @@
 
 ##This is my attempt at checking in the code I write for fun.
 
+* StringReverse: Reverse a String.
 * ArrayFindSum: Given an array, find if any consecutive set of numbers sum to a given number.
 * ArrayLongestIncSequence: Given an array (not sorted), find the longest increasing sequence in it.
 * HashMapSort: Sort keys of a HashMap, using it's values.
