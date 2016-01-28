@@ -1,6 +1,12 @@
 /*
  * Given an array of positive integers and a number, find if any consecutive set of numbers in that array 
  * sum to the given number.
+ * 
+ * This can be done in O(n). Have two pointers indicating the start and end indices of your current window.
+ * If the sum of the window is less than target number, increase window size (increment end index). If the
+ * sum is greater than target number, decrease the size of the window (increment the start index). If the
+ * sum is equal to target number, return true.
+ *
  */
 
 import java.util.Arrays;
