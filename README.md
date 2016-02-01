@@ -2,6 +2,7 @@
 
 ##This is my attempt at checking in the code I write for fun.
 
+* StackFromArray: Implement a Stack using an array.
 * FlattenListOfLists: Given list of lists, flatten it.
 * StringReverse: Reverse a String.
 * ArrayFindSum: Given an array, find if any consecutive set of numbers sum to a given number.
