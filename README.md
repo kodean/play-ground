@@ -2,7 +2,8 @@
 
 ##This is my attempt at checking in the code I write for fun.
 
-* CountColinearPoints: Given bunch of points, return the maximum number of points that are co-linear
+* QueueFromArray: Implement a Queue datastructure, using an array.
+* CountColinearPoints: Given bunch of points, return the maximum number of points that are co-linear.
 * StackFromArray: Implement a Stack using an array.
 * FlattenListOfLists: Given list of lists, flatten it.
 * StringReverse: Reverse a String.
