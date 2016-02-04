@@ -2,6 +2,7 @@
 
 ##This is my attempt at checking in the code I write for fun.
 
+* TreeMaxHops: Return max of number of hops between any two nodes in a tree.
 * QueueFromArray: Implement a Queue datastructure, using an array.
 * CountColinearPoints: Given bunch of points, return the maximum number of points that are co-linear.
 * StackFromArray: Implement a Stack using an array.
