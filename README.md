@@ -2,6 +2,7 @@
 
 ##This is my attempt at checking in the code I write for fun.
 
+* TreeBalanced: Given a tree, check if it is balanced or not.
 * TreeMaxHops: Return max of number of hops between any two nodes in a tree.
 * QueueFromArray: Implement a Queue datastructure, using an array.
 * CountColinearPoints: Given bunch of points, return the maximum number of points that are co-linear.
