@@ -55,6 +55,8 @@ public class TreeMaxHops {
 		return 1+Math.max(leftDepth, rightDepth);
 	}
 	
+	// Iteratively get depth and also keep track of max hops
+
 	public static class Node {
 		public int data;
 		public Node left, right;
