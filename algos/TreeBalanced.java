@@ -52,6 +52,8 @@ public class TreeBalanced {
 	}
 	
 	// Iterative, breadth-first (level tracking similar to printing tree level by level).
+	// Whenever we change level, increment max and min depths. When you encounter a leaf 
+	// node, stop incrementing min depth.
 	public static <T> boolean isBalancedBreadthFirst(TreeNode<T> root) {
 		if (root == null) {
 			return true;
