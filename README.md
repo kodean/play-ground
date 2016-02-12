@@ -2,6 +2,7 @@
 
 ##This is my attempt at checking in the code I write for fun.
 
+* TreeCheckBST: Given a binary tree, check if it is Binary Search Tree or not.
 * TreeBalanced: Given a tree, check if it is balanced or not.
 * TreeMaxHops: Return max of number of hops between any two nodes in a tree.
 * QueueFromArray: Implement a Queue datastructure, using an array.
