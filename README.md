@@ -2,6 +2,7 @@
 
 ##This is my attempt at checking in the code I write for fun.
 
+* TreeRandomNode: Return a random node from a binary tree.
 * TreeTraversal: Traverse a binary tree.
 * TreeCheckBST: Given a binary tree, check if it is Binary Search Tree or not.
 * TreeBalanced: Given a tree, check if it is balanced or not.
