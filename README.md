@@ -2,6 +2,7 @@
 
 ##This is my attempt at checking in the code I write for fun.
 
+* LinkedListReverse: Reverse a LinkedList.
 * DPColorHouses: Find minimum cost of painting set of houses of varying sizes with 3 colors of different prices. Adjacent houses should not have same color.
 * TreeRandomNode: Return a random node from a binary tree.
 * TreeTraversal: Traverse a binary tree.
