@@ -20,39 +20,25 @@ public class LinkedListIsMerged {
 	}
 	
 	public static boolean merged(LinkedListNode first, LinkedListNode second) {
-		int lengthDifference = 0;
-		
-		LinkedListNode cur1 = first;
-		LinkedListNode cur2 = second;
+		LinkedListNode cur1 = first, cur2 = second;
 		
 		while (cur1 != null && cur2 != null) {
 			cur1 = cur1.next;
 			cur2 = cur2.next;
 		}
 		
-		LinkedListNode longerList, shorterList;
-		
-		if (cur1 == null) {
-			longerList = second;
-			shorterList = first;
-			
-			while (cur2 != null) {
+		LinkedListNode longerList = (cur1 == null)?second:first;
+		LinkedListNode shorterList = (cur1 == null)?first:second;
+	
+		while (cur1 != null || cur2 != null) {
+			if (cur1 == null) {
 				cur2 = cur2.next;
-				lengthDifference++;
-			}
-		} else {
-			longerList = first;
-			shorterList = second;
-			
-			while (cur1 != null) {
+			} else {
 				cur1 = cur1.next;
-				lengthDifference++;
 			}
-		}
-		
-		for (int i=0;i<lengthDifference;i++) {
+
 			longerList = longerList.next;
-		}
+                }
 		
 		while (longerList != null && shorterList != null) {
 			if (longerList == shorterList) {
@@ -64,15 +50,6 @@ public class LinkedListIsMerged {
 		}
 		
 		return false;
-	}
-	
-	public static void printList(LinkedListNode head) {
-		LinkedListNode cur = head;
-		while (cur != null) {
-			System.out.print(cur.data+" ");
-			cur = cur.next;
-		}
-		System.out.println();
 	}
 	
 	public static class LinkedListNode {
