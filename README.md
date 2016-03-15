@@ -2,6 +2,7 @@
 
 ##This is my attempt at checking in the code I write for fun.
 
+* LinkedListIsMerged: Check if a LinkedList is merged.
 * LinkedListCycleStart: Find the start node of cycle in a circular LinkedList.
 * TreeFromArray: Given a sorted array, build a BST of minimum depth.
 * LinkedListReverse: Reverse a LinkedList.
