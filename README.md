@@ -2,6 +2,7 @@
 
 ##This is my attempt at checking in the code I write for fun.
 
+* ArrayReverse: Reverse an array in place.
 * ArrayMerge: Merge two sorted arrays, preserving the sorted order.
 * StringPalindrome: Check if a String is a palindrome.
 * LinkedListIsMerged: Check if a LinkedList is merged.
