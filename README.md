@@ -2,6 +2,7 @@
 
 ##This is my attempt at checking in the code I write for fun.
 
+* ArrayMostFrequent: Return the most freqently occuring element in the given array.
 * LinkedListDeleteNode: Delete a given node from LinkedList.
 * ArrayReverse: Reverse an array in place.
 * ArrayMerge: Merge two sorted arrays, preserving the sorted order.
